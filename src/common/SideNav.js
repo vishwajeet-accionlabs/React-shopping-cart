@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SideNavStyle from "./SideNav.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import About from "./About";
-import Service from "./Service";
-import Clients from "./Clients";
-import Contact from "./Contact";
+import About from "../components/About";
+import Service from "../components/Service";
+import Clients from "../components/Clients";
+import Contact from "../components/Contact";
 
 const SideNav = () => {
   const openNav = () => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavbarStyle from "./NavbarStyle.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
@@ -9,13 +10,19 @@ const Navbar = () => {
         <div className="container">
           <ul>
             <li>
-              <Link to="/">Shop</Link>
+              <Link to="/pay">
+                <FontAwesomeIcon icon="credit-card" />
+              </Link>
             </li>
             <li>
-              <Link to="/cart">My cart</Link>
+              <Link to="/cart">
+                <FontAwesomeIcon icon="shopping-cart" />
+              </Link>
             </li>
             <li>
-              <Link to="/cart">Shopping cart</Link>
+              <Link to="/sale">
+                <FontAwesomeIcon icon="bullhorn" />
+              </Link>
             </li>
           </ul>
         </div>
